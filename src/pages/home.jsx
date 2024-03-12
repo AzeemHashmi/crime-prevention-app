@@ -7,12 +7,12 @@ import Grid from '@mui/material/Grid';
 const home = () => {
   return (
     <>
-      <Navbar />
-      <Grid container spacing={2}>
-        <Grid item xs={12} md={7} padding={2}>
+      {/* <Navbar /> */}
+      <Grid container spacing={2} style={{ height: "calc(100vh - 64px)" }}>
+        <Grid item xs={12} md={7} lg={8}>
           <Map />
         </Grid>
-        <Grid item xs={6} md={5} marginTop={10} padding={3}>
+        <Grid item xs={12} md={5} lg={4}>
             <Table/>
         </Grid>
       </Grid>

@@ -1,11 +1,8 @@
 import React from "react";
-import Navbar from "../components/navbar";
 
 const crime = () => {
   return (
     <>
-      <Navbar />
-
       <div>
         <h1>Dummy Data</h1>
         <p>

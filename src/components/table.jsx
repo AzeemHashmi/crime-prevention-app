@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
 import TableCell from "@mui/material/TableCell";
@@ -29,9 +29,9 @@ const rows = [
 
 export default function DenseTable() {
   return (
-    <TableContainer component={Paper} >
-      <Table sx={{ minWidth: 250}} size="small" aria-label="a dense table" margin='20px'>
-        <TableHead sx={{backgroundColor:'lightblue'}}>
+    <TableContainer component={Paper}>
+      <Table sx={{ minWidth: 250 }} size="small" aria-label="a dense table">
+        <TableHead sx={{ backgroundColor: 'lightblue' }}>
           <TableRow>
             <TableCell align="center">Case</TableCell>
             <TableCell align="center">Location</TableCell>
@@ -39,10 +39,7 @@ export default function DenseTable() {
         </TableHead>
         <TableBody>
           {rows.map((row) => (
-            <TableRow
-              key={row.name}
-              sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
-            >
+            <TableRow key={row.name}>
               <TableCell align="center" component="th" scope="row">
                 {row.name}
               </TableCell>
