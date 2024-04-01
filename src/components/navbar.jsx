@@ -12,8 +12,10 @@ import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
 import { Link } from "react-router-dom";
+import { blueGrey } from '@mui/material/colors';
 
-const pages = ["Crime Prevention", "About Us", "News Events"];
+
+const pages = ["Crime Map", "About Us", "News Events"];
 const settings = ["Profile", "Logout"];
 
 function Navbar() {
@@ -22,6 +24,8 @@ function Navbar() {
   const toggleDrawer = () => {
     setOpenDrawer(!openDrawer);
   };
+
+  const pri = blueGrey['A700']
 
   return (
     <>

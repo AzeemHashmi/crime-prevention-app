@@ -1,6 +1,6 @@
 import Navbar from "./components/navbar";
 import HomePage from "./pages/home";
-import CrimePrevention from "./pages/crime";
+import CrimeMap from "./pages/crime";
 import AboutUs from "./pages/about";
 import NewsEvents from "./pages/news";
 import SignUp from "./pages/signUp";
@@ -13,7 +13,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/crime-prevention" element={<CrimePrevention />} />
+          <Route path="/crime-map" element={<CrimeMap />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/news-events" element={<NewsEvents />} />
           <Route path="/join-us" element={<SignUp />} />
