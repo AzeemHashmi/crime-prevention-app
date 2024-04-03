@@ -53,6 +53,7 @@
   .work,
   .trust {
     flex: 1;
+    border-radius: 10px;
     max-width: 35%;
     padding: 2%; 
     text-align: center;
@@ -60,7 +61,7 @@
   
   .contact-us {
     padding: 50px 0;
-    background-color: #f9f9f9;
+    background-color: white;
   }
   
   .contact-us-content {
